@@ -1,7 +1,7 @@
 import requests
 import os
 
-API_KEY = os.getenv("WEATHER_API")
+API_KEY = st.secrets["WEATHER_API"]
 
 
 def get_data(place, forecast_days=None):
